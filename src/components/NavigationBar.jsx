@@ -24,6 +24,7 @@ function NavigationBar() {
   };
 
   return (
+    <>
     <header className="flex justify-between items-center md:px-3 py-2 drop-shadow-md bg-blue text-white relative">
       {/* Logo and desktop navigation (unchanged) */}
       <a href="#">
@@ -187,6 +188,7 @@ function NavigationBar() {
         </div>
       )}
     </header>
+    </>
   );
 }
 

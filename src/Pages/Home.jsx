@@ -1,8 +1,14 @@
+import NavigationBar from "../components/NavigationBar";
+import NepraCompliance from "../components/NepraCompliance";
+import Plans from "../components/Plans";
+
 const Home = () => {
    return (
-    <div>
-        <h1 className="text-3xl font-bold underline text-red-500 text-center">Home</h1>
-        <button>jdfks</button>
+    <div className="flex flex-col min-h-screen">
+  
+        <NavigationBar className="flex-shrink-0"/>
+        <NepraCompliance className="flex-grow"/>
+        <Plans/>
     </div>
    )
    
