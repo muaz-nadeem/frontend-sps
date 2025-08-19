@@ -21,4 +21,4 @@ blur filter : 15px
 Team 
 Moaz Nadeem : http://moaznadeem.netlify.app
 
-Rida Saghir Qureshi : https://rsq-codequeen.github.io/Portfolio-website/ (Portfolio in progress)
+
