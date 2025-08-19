@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown'; // Adjust path as needed
-
+import logo from '../assets/SPSLogo.webp'
 function NavigationBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileDropdown, setActiveMobileDropdown] = useState(null); // Track which dropdown is open
@@ -29,7 +29,7 @@ function NavigationBar() {
       {/* Logo and desktop navigation (unchanged) */}
       <a href="#">
         <img 
-          src="/src/assets/SPS logo.png"
+          src={logo}
           alt="Company Logo"
           className="w-64 hover:scale-105 transition-all" 
         />

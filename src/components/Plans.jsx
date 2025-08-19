@@ -1,8 +1,8 @@
 import React from 'react'
 import Plan from './Plan'
-import BasicIcon from '../assets/BasicIcon.png'
-import StandardIcon from '../assets/StandardIcon.png'
-import PremiumIcon from '../assets/PremiumIcon.png'
+import BasicIcon from '../assets/BasicIcon.webp'
+import StandardIcon from '../assets/StandardIcon.webp'
+import PremiumIcon from '../assets/PremiumIcon.webp'
 const Plans = () => {
   return (
     <div className='text-center'>
