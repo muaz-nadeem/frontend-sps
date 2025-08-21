@@ -25,7 +25,7 @@ function NavigationBar() {
 
   return (
     <>
-    <header className="flex justify-between items-center md:px-3 py-2 drop-shadow-md bg-blue text-white relative">
+    <nav className="flex justify-between items-center md:px-3 py-2 drop-shadow-md bg-blue text-white relative sticky top-0 z-50">
       {/* Logo and desktop navigation (unchanged) */}
       <a href="#">
         <img 
@@ -187,7 +187,7 @@ function NavigationBar() {
           </div>
         </div>
       )}
-    </header>
+    </nav>
     </>
   );
 }
