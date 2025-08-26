@@ -10,7 +10,6 @@ function App() {
   return (
     <>
        {/* <Home /> */}
-       {/* <Section2 />  */}
        <Products />
     </>
   );
