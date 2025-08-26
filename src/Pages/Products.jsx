@@ -6,7 +6,7 @@ import Section4 from '../components/productpage_components/section4'
 
 const Products = () => {
   return (
-    <div >
+    <div flex flex-col min-h-screen>
         <Section1 />
         <Section2 />
         <Section3 />
@@ -15,4 +15,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Products;

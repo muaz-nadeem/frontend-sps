@@ -3,13 +3,13 @@ import ContactImage from '../../assets/Contact image.webp'
 
 const Section4 = () => {
     return (
-        <div className="mt-55 mb-15">
-            <h1 className="mr-15 text-[45px] font-semibold font-poppins text-[#130E77] text-center mt-10">Get Started with NEPRA Compliance: Schedule Your Consultation Today </h1>
+        <div className="mt-24 mb-16 px-4">
+            <h1 className="text-3xl md:text-4xl lg:text-4 xl font-semibold font-poppins text-[#130E77] text-center mt-10 mb-8">Get Started with NEPRA Compliance: Schedule Your Consultation Today </h1>
             
-            <div className="flex items-center justify-center gap-25 ml-55 mt-5">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 max-w-7xl mx-auto">
             {/* FORM */}
 
-            <div className="bg-white mt-5 -ml-10 shadow-[3px_3px_15px_7px_rgba(19,14,119,0.5)] rounded-lg p-8 w-[75%] h-[800px]">
+            <div className="bg-white shadow-[3px_3px_15px_7px_rgba(19,14,119,0.5)] rounded-lg p-6 md:p-8 w-full lg:w-1/2 min-h-[600px] lg:min-h-[700px]">
     
                 <form className="space-y-10 mt-5">
                     {/* Full Name */}
@@ -100,7 +100,7 @@ const Section4 = () => {
                     <div className="text-center pt-4 ">
                         <button
                             type="submit"
-                            className="w-1/4 h-14 bg-gradient-to-r from-blue-500 to-blue-900 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 text-white font-bold font-poppins px-6 py-2 rounded-4xl"
+                            className="w-2/3 lg:w-1/4 md:w-1/3 h-14 bg-gradient-to-r from-blue-500 to-blue-900 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 text-white font-bold font-poppins px-6 py-2 rounded-4xl"
                         >
                             Submit
                         </button>
@@ -111,8 +111,8 @@ const Section4 = () => {
 
             {/* IMAGE */}
 
-            <div className="w-1/2 h-[800px] mt-10">
-                <img src={ContactImage} alt="NEPRA Compliance" className="w-full h-full object-cover" />
+            <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px] mt-8 lg:mt-0 -mr-32">
+                <img src={ContactImage} alt="NEPRA Compliance" className="w-full h-full object-cover rounded-lg" />
             </div>
 
             </div>
