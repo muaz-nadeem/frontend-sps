@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from './Dropdown'; // Adjust path as needed
 import logo from '../assets/SPSLogo.webp'
+
 function NavigationBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileDropdown, setActiveMobileDropdown] = useState(null); // Track which dropdown is open
@@ -25,7 +26,7 @@ function NavigationBar() {
 
   return (
     <>
-    <nav className="flex justify-between items-center md:px-3 py-2 drop-shadow-md bg-blue text-white relative sticky top-0 z-50">
+    <nav className="flex justify-between items-center md:px-3 py-2 drop-shadow-md bg-blue text-white sticky top-0 z-50">
       {/* Logo and desktop navigation (unchanged) */}
       <a href="#">
         <img 
@@ -42,7 +43,7 @@ function NavigationBar() {
             Home
           </li>
           
-          <Dropdown title="Products" items={dropdownItems.products} />
+          <Dropdown title="Products" items={dropdownItems.products} />  
           <Dropdown title="Services" items={dropdownItems.services} />
           <Dropdown title="Pricing" items={dropdownItems.pricing} />
           <Dropdown title="Activities" items={dropdownItems.activities} />
