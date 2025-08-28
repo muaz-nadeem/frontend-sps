@@ -5,7 +5,7 @@ const Section2 = () => {
     return (
 
 
-        <div className="m-4 lg:m-32 bg-white border-white rounded-2xl lg:rounded-4xl p-3 lg:px-32 lg:py-16 min-h-screen shadow-[3px_3px_7px_2px_rgba(0,0,0,0.3)]">
+        <div className="p-5 -mt-50 mb-30 ml-5 -mr-3 lg:m-32 bg-white border-white rounded-2xl lg:rounded-4xl lg:px-32 lg:py-16 min-h-screen shadow-[3px_3px_7px_2px_rgba(0,0,0,0.3)]">
 
             {/* THE LEFT TWO BOXES */}
             <div className="flex flex-col lg:flex-row justify-center">
@@ -43,7 +43,7 @@ const Section2 = () => {
                 <div className="flex gap-10 ml-10 mt-5">
 
                     <div className="relative flex items-center">
-                        <h1 className="ml-2 lg:ml-5 mt-2 lg:mt-5 text-2xl lg:text-4xl font-semibold text-blue-900">Tenable.io</h1>
+                        <h1 className="-mr-24 lg:ml-5 mt-2 lg:mt-5 text-2xl lg:text-4xl font-semibold text-blue-900">Tenable.io</h1>
                         <div className="w-20 lg:w-44 ml-2 -mr-4 lg:-mr-9 mt-2 lg:mt-7 h-[1px] bg-blue"></div> {/* horizontal line */}
                     </div>
 
@@ -55,12 +55,12 @@ const Section2 = () => {
                         <div className="w-7 h-7 rounded-full border-3 border-blue-800 bg-transparent "></div> {/* circle */}
                     </div>
 
-                    <div className='flex flex-col gap-10 mt-10'>
+                    <div className='flex flex-col gap-10 mt-5'>
                         <Description_box description="Real time monitoring and anomaly detection for OT 
-                        environments with comprehensive asset inventory" shadow="shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]" width="xl" height="lg"/ >
+                        environments with comprehensive asset inventory" shadow="shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]" width="xl" height="lg" />
 
                         <Description_box description="Protects critical Infrastructure through detailed 
-                        risk assessments" shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" width="xl" height="lg"/>
+                        risk assessments" shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" width="xl" height="lg" />
                     </div>
 
                 </div>

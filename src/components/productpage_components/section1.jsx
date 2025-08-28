@@ -6,7 +6,7 @@ const Section1 = () => {
   return (
 
     <div className='flex flex-col lg:flex-row w-full flex-shrink-0 min-h-screen'>
-      <div className="mt-8 lg:mt-24 bg-white py-4 lg:py-7 border rounded-2xl lg:rounded-4xl mx-4 lg:mx-20 my-4 lg:my-10 w-full lg:w-1/2 flex flex-col shadow-[0_0_5px_7px_rgba(0,0,150,0.3),0_0_20px_10px_rgba(0,0,0,0.3)]">
+      <div className="mt-10 mx-5 2xl:mt-8 lg:mt-24 bg-white py-4 lg:py-7 border rounded-2xl lg:rounded-4xl lg:mx-20 lg:my-10 w-full lg:w-1/2 flex flex-col shadow-[0_0_5px_7px_rgba(0,0,150,0.3),0_0_20px_10px_rgba(0,0,0,0.3)]">
           <img className="max-w-48 lg:max-w-xs mx-auto" src={tenableLogo} alt="tenable logo" />
 
           <div className="h-1 bg-blue-700 mt-3 lg:mt-5 shadow-[0_4px_7px_rgba(0,0,255,0.4)]"></div>
@@ -49,11 +49,11 @@ const Section1 = () => {
 
 
       <div 
-        className="lg:block w-full lg:w-1/2 bg-gradient-to-b from-blue-500 to-blue-900 flex items-center justify-center min-h-[300px] lg:min-h-screen"
+        className="hidden md:max-2xl:block w-full lg:w-1/2 bg-gradient-to-b from-blue-500 to-blue-900 flex items-center justify-center min-h-[300px] lg:min-h-screen"
         style={{clipPath: "circle(55% at 100% 50%)"}}
         >
       
-         <img className="ml-8 lg:ml-96 max-w-48 lg:max-w-lg" src={trendMicroLogo} alt="logo" />
+         <img className="pl-10 mt-60 lg:ml-96 max-w-48 lg:max-w-lg" src={trendMicroLogo} alt="logo" />
       </div>
 
     </div>

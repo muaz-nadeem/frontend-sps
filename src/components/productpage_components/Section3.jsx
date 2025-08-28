@@ -21,7 +21,7 @@ const Section3 = () => {
         <p className='text-center font-poppins text-lg lg:text-xl mt-3 lg:mt-5'>This service is tailored for:</p>
 
         <div className='flex flex-col lg:flex-row justify-center mt-8 lg:mt-16 gap-6 lg:gap-20'>
-            <Description_box description="Power Generation Companies"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" width="200px" height="200px" font="bold"/>
+            <Description_box description="Power Generation Companies"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" width="600" height="xl" font="bold"/>
             <Description_box description="Power Generation Companies"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" width="200px" height="200px" font="bold"/>
         </div>
 
