@@ -3,10 +3,11 @@ import Section1 from '../components/productpage_components/section1'
 import Section2 from '../components/productpage_components/section2'
 import Section3 from '../components/productpage_components/Section3'
 import Section4 from '../components/productpage_components/section4'
-
+import NavigationBar from '../components/NavigationBar'
 const Products = () => {
   return (
     <div flex flex-col min-h-screen>
+      <NavigationBar/>
         <Section1 />
         <Section2 />
         <Section3 />

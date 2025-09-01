@@ -3,7 +3,7 @@ import ContactImage from '../../assets/Contact image.webp'
 
 const Section4 = () => {
     return (
-        <div className="mt-24 mb-16 px-4">
+        <div className="mb-16 px-4 ">
             <h1 className="text-3xl md:text-4xl lg:text-4 xl font-semibold font-poppins text-[#130E77] text-center mt-10 mb-8">Get Started with NEPRA Compliance: Schedule Your Consultation Today </h1>
             
             <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 max-w-7xl mx-auto">
@@ -111,7 +111,7 @@ const Section4 = () => {
 
             {/* IMAGE */}
 
-            <div className="w-full lg:w-1/2 h-[400px] lg:h-[700px] mt-8 lg:mt-0 -mr-32">
+            <div className="w-full md:w-1/2 h-[400px] lg:h-[700px] mt-8 lg:mt-0 -mr-32">
                 <img src={ContactImage} alt="NEPRA Compliance" className="w-full h-full object-cover rounded-lg" />
             </div>
 

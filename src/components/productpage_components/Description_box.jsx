@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Description_box = ({ description, shadow, width, height, font}) => {
+const Description_box = ({ description, classes}) => {
     return (
 
-        <div className={`w-${width} h-${height} font-poppins font-${font} p-7 text-2xl rounded-tr-3xl border-4 border-blue-700 rounded-bl-3xl ${shadow}`}>
+        <div className={` ${classes} font-poppins  p-7 text-base rounded-tr-3xl border-4 border-blue-700 rounded-bl-3xl`}>
             <p>
                 {description}
             </p>
