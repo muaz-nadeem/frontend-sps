@@ -1,10 +1,12 @@
 @import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
 
 @theme {
   --font-poppins: Poppins, sans-serif;
   --color-blue:#130E77;
   --color-skyblue:#2F80E8;
-  
+  --color-grey:#d9d9d9
 }
 @keyframes subtleWave {
   0%, 100% {
