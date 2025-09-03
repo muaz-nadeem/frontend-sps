@@ -10,16 +10,13 @@ import pricingPlans from '../components/pricing_plans';
 const Pricing = () => {
   // Get the 'planName' (e.g., 'basic', 'standard') from the URL
   const { planName } = useParams();
-
   // Find the correct plan data based on the planName (slug)
   const currentPlan = pricingPlans.find(plan => plan.slug === planName);
-
   // Handle the case where the plan is not found
   if (!currentPlan) {
     return <div>Plan not found.</div>;
   }
 
-  // The rest of your component remains the same, as it now has the correct data to render
   return (
     <div className='mt-12'>
       <Plans className="" />

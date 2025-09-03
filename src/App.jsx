@@ -3,18 +3,23 @@ import Home from "./Pages/Home";
 import Products from "./Pages/Products"
 import NavigationBar from "./components/NavigationBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import 'flowbite';
 import Footer from "./components/Footer";
 import Pricing from "./Pages/Pricing";
+import Services from "./Pages/Services";
+import FlowbiteInitializer from "./components/FLowbiteInitializer";
+import React  from 'react';
 function App() {
+
   return (
     <Router basename="/frontend-sps">
+      <FlowbiteInitializer /> 
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         {/* Change the route from :planId to :planName */}
         <Route path="/pricing/:planName" element={<Pricing />} />
+        <Route path="/services/:serviceName" element={<Services/>}/>
       </Routes>
       <Footer />
     </Router>
