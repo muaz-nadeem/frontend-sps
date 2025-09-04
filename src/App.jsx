@@ -10,6 +10,7 @@ import FlowbiteInitializer from "./components/FLowbiteInitializer";
 
 import React  from 'react';
 import AboutUs from "./Pages/AboutUs";
+import Blog from "./Pages/Blog";
 function App() {
 
   return (
@@ -19,9 +20,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        {/* Change the route from :planId to :planName */}
         <Route path="/pricing/:planName" element={<Pricing />} />
         <Route path="/services/:serviceName" element={<Services/>}/>
+        <Route path="/activities/blog" element={<Blog/>}/>
         <Route path="/about-us/contact" element={<AboutUs/>}/>
       </Routes>
       <Footer />
