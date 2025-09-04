@@ -1,5 +1,6 @@
 import serive1_img from '/servicesImages/service1.webp'
 import service2_img from '/servicesImages/service2.webp'
+import service3_img from '/servicesImages/service3.webp'
 const servicesdata=[
     {
     id:1,
@@ -71,7 +72,30 @@ const servicesdata=[
         `Regular backup of important data, transactions and software shall be ensured.`,
         `Relevant employees of the licensee shall have appropriate knowledge and background to perform their tasks. Regular trainings shall be arranged to keep employees aware of the security risks, security controls and security control monitoring mechanisms. Employees shall be regularly updated about the changes in internal policies and procedures to ensure operational effectiveness.`
     ]
-    }
+    },
+{
+    id:3,
+    slug:'service-3',
+    banner:'SPS’s Security Risk and Vulnerability Assessment as a Service provides a structured approach to identifying, evaluating, and prioritizing risks to your IT and OT assets, ensuring compliance with NEPRA cybersecurity regulations.',
+    img: service3_img, 
+    heading:'Compliance Area',
+    li:[
+        'Conducting regular Security Risk and Vulnerability Assessment : ',
+        'The risk I vulnerability assessment shall cover the following aspects as a minimum requirement : ',    
+    ],
+    lidata:[
+        'The licensee shall conduct and document a formal Security Risk I Vulnerability Assessment for Information Security Assets (IT and OT) with a view of identifying, estimating and prioritizing risks to which its operations are exposed due to information security vulnerabilities. The control testing shall be based on the controls mentioned in the relevant international standards. The Board of Directors or a Committee of the Board authorized by the Board of Directors shall review the risk / vulnerability assessment document and take steps to mitigate any risks and vulnerabilities identified.',
+       [ `A current and detailed description of licensee's business and technological environment and existing security measures in place including identification of location, systems and methods for maintaining information `,
+        'An identification of information and the information systems to be protected specifically',
+        'Classification and ranking (high, medium, low) of the sensitive systems, applications in order of their importance and based on the assessment of threats and vulnerabilities or risk assessment;',
+        'Assessment of potential threats and vulnerabilities to security and integrity of data, information systems and applications ',
+        `An evaluation of existing Security Controls' effectiveness against each threat and vulnerability`,
+        `The security and contractual responsibilities of Service Providers (SPs), including customers who have access to the licensee's systems and data `,
+       ' Compliance, concentration, operational, country and legal risks shall be assessed by the licensees before entering into the contract, while managing information security outsourcing arrangements with the SPs ',
+        'The Security Risk / Vulnerability Assessment shall be carried out at least once a year; however, in case of a major security breach, significant changes to the infrastructure and introduction of a new product or service, an immediate review of risk assessment shall be carried out. Further, in case of a major security breach, risk assessment review shall include a detailed analysis of the factors that cause such security breaches.',
+       ]
+    ]
+    },
 ]
 
 export default servicesdata

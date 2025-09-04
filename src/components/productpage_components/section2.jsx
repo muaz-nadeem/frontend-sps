@@ -12,21 +12,22 @@ const Section2 = () => {
 
                 <div className="flex flex-col gap-10 ml-10 mt-5">
 
-                    <Description_box description="Real time monitoring and anomaly detection for OT 
-                environments with comprehensive asset inventory"  
-                classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]"/>
+                <Description_box  classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                    Real time monitoring and anomaly detection for OT environments with comprehensive asset inventory
+                </Description_box>
 
-                    <Description_box description="Protects critical Infrastructure through detailed 
-                risk assessments"   classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]"/>
+                <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                    Protects critical Infrastructure through detailed risk assessments
+                </Description_box>
                 </div>
 
-                
                 <div className="hidden lg:flex flex-col gap-32 items-center mt-16 ml-2">
                     <div className="w-7 h-7 rounded-full border-3 border-blue-800 bg-transparent "></div> {/* circle */}
                     <div className="w-7 h-7 rounded-full border-3 border-blue-800 bg-transparent "></div> {/* circle */}
                 </div>
 
-                <div class="hidden lg:block mt-20 ml-2 w-32 h-40 border-t-2 border-b-2 border-r-2 rounded-tr-4xl rounded-br-4xl border-blue"></div>
+                <div class="hidden lg:block mt-20 ml-2 w-32 h-40 border-t-2 border-b-2 border-r-2 rounded-tr-4xl rounded-br-4xl border-blue">
+                </div>
 
                 <div className="relative flex items-center mt-4 lg:mt-0">
                     <div className="w-20 lg:w-40 h-[1px] bg-blue"></div> {/* horizontal line */}
@@ -56,11 +57,12 @@ const Section2 = () => {
                     </div>
 
                     <div className='flex flex-col gap-10 mt-10'>
-                        <Description_box description="Real time monitoring and anomaly detection for OT 
-                        environments with comprehensive asset inventory"  classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue]"/ >
+                        <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue]">Real time monitoring and anomaly detection for OT 
+                        environments with comprehensive asset inventory</Description_box>
 
-                        <Description_box description="Protects critical Infrastructure through detailed 
-                        risk assessments"  classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue] "/>
+                        <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue] ">Protects critical Infrastructure through detailed 
+                        risk assessments
+                        </Description_box>
                     </div>
 
                 </div>
@@ -73,11 +75,13 @@ const Section2 = () => {
 
                 <div className="flex flex-col gap-10 ml-10 mt-10">
 
-                    <Description_box description="Real time monitoring and anomaly detection for OT 
-                        environments with comprehensive asset inventory"  classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]"/>
+                    <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                        Real time monitoring and anomaly detection for OT environments with comprehensive asset inventory
+                    </Description_box>
 
-                    <Description_box description="Protects critical Infrastructure through detailed 
-                      risk assessments"   classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]"/>
+                    <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                        Protects critical Infrastructure through detailed risk assessments
+                    </Description_box>
                 </div>
 
                 <div className="hidden lg:flex flex-col gap-30 items-center mt-22 ml-2">

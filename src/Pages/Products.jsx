@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 const Products = () => {
   return (
     <div flex flex-col min-h-screen>
-
         <Section1 />
         <Section2 />
         <Section3 />

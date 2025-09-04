@@ -15,16 +15,16 @@ const ComplianceArea = ({ heading, li, lidata }) => {
               {lidata[index] && (
                 <>
                   {Array.isArray(lidata[index]) ? (
-                    <ul className='list-none pl-5 text-black font-normal text-sm mt-1'>
+                    <ul className='list-none pl-5 text-black font-normal mt-1'>
                       {lidata[index].map((subItem, subIndex) => (
-                        <li key={subIndex} className='flex items-center text-black font-normal text-sm'>
+                        <li key={subIndex} className='flex items-center text-black font-normal text-md p-2'>
                           <CheckSquare className="w-4 h-4 ml-8 mr-2 text-blue flex-shrink-0" />
                           {subItem}
                         </li>
                       ))}
                     </ul>
                   ) : (
-                    <div className='flex items-start text-black font-normal text-sm mt-1'>
+                    <div className='flex items-start text-black font-normal text-base mt-1'>
                       <CheckSquare className="w-4 h-4 ml-8 mr-2 text-blue flex-shrink-0" />
                       <p>{lidata[index]}</p>
                     </div>

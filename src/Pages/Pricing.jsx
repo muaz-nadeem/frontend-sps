@@ -30,11 +30,9 @@ const Pricing = () => {
         <div className="flex flex-row flex-wrap justify-center gap-5 mt-5 max-w-4xl">
           {currentPlan.benifit.map((benefit, index) => (
             <>
-              <Description_box
-                key={index}
-                classes={'w-96 h-auto'}
-                description={benefit}
-              />
+              <Description_box key={index} classes={'w-96 h-auto'}>
+                {benefit}
+              </Description_box>
               {index === 1 && (
                 <div className="w-full"></div>
               )}

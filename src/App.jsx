@@ -7,7 +7,9 @@ import Footer from "./components/Footer";
 import Pricing from "./Pages/Pricing";
 import Services from "./Pages/Services";
 import FlowbiteInitializer from "./components/FLowbiteInitializer";
+
 import React  from 'react';
+import AboutUs from "./Pages/AboutUs";
 function App() {
 
   return (
@@ -20,6 +22,7 @@ function App() {
         {/* Change the route from :planId to :planName */}
         <Route path="/pricing/:planName" element={<Pricing />} />
         <Route path="/services/:serviceName" element={<Services/>}/>
+        <Route path="/about-us/contact" element={<AboutUs/>}/>
       </Routes>
       <Footer />
     </Router>

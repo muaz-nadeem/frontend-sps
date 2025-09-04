@@ -21,13 +21,21 @@ const Section3 = () => {
         <p className='text-center font-poppins text-md mt-3'>This service is tailored for:</p>
 
         <div className='flex flex-col lg:flex-row justify-center mt-8 gap-6 lg:gap-20'>
-            <Description_box description="Power Generation Companies"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold"/>
-            <Description_box description="Transmission Network Operators"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold"/>
+            <Description_box   shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold">
+              Power Generation Companies
+              </Description_box>
+            <Description_box  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold">
+              Transmission Network Operators
+            </Description_box>
         </div>
 
         <div className='flex flex-col lg:flex-row justify-center mt-6 lg:mt-10 gap-6 lg:gap-20'>
-            <Description_box description="Distribution Companies"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold"/>
-            <Description_box description="Independent Power Producers (IPPs)"  shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold"/>
+            <Description_box shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold">
+              Distribution Companies
+            </Description_box>
+            <Description_box shadow="shadow-[0px_0px_15px_5px_rgba(35,159,212,0.5)]" classes="w-sm" font="bold">
+              Independent Power Producers (IPPs)
+            </Description_box>
         </div>
  
 
