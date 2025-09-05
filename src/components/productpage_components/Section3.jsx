@@ -3,18 +3,20 @@ import Statcard_s3 from './statcard_s3'
 import Description_box from './Description_box'
 import { Check } from "lucide-react";
 
-const Section3 = () => {
+const Section3 = ({ product }) => {
   return (
     <div className="m-4 lg:m-32 bg-white border-white rounded-2xl lg:rounded-4xl p-4 lg:p-8 min-h-screen shadow-[3px_3px_7px_2px_rgba(0,0,0,0.3)]">
         <h1 className="text-2xl  font-semibold font-poppins text-blue text-center ">How We Support NEPRA Compliance</h1>
 
         <div className = "flex flex-col lg:flex-row justify-center gap-6 lg:gap-10 mt-8">
-
-        <Statcard_s3 shadow = "shadow-[0px_0px_15px_7px_rgba(47,128,232,0.5)]" title = "Comprehensive Asset Discovery" description = "Identify and Catalog all IT and OT Assets"/>
-        <Statcard_s3 shadow = "shadow-[0px_0px_15px_7px_rgba(35,159,212,0.5)]" title = "Risk-Based Vulnerability Management" description = "This is the white section with description text."/>
-        <Statcard_s3 shadow = "shadow-[0px_0px_15px_7px_rgba(47,128,232,0.5)]" title = "Implementation of Security Controls" description = "This is the white section with description text."/>
-        <Statcard_s3 shadow = "shadow-[0px_0px_15px_7px_rgba(35,159,212,0.5)]" title = "Incident Detection and Response" description = "This is the white section with description text."/>
-        <Statcard_s3 shadow = "shadow-[0px_0px_15px_7px_rgba(35,159,212,0.5)]" title = "Regular Compliance Reporting" description = "This is the white section with description text."/>
+        {product.stats.map((stat, index) => (
+          <Statcard_s3 
+            key={index}
+            shadow={index % 2 === 0 ? "shadow-[0px_0px_15px_7px_rgba(47,128,232,0.5)]" : "shadow-[0px_0px_15px_7px_rgba(35,159,212,0.5)]"} 
+            title={stat.value} 
+            description={stat.description}
+          />
+        ))}
         </div>
         
         <h2 className="text-2xl font-semibold font-poppins text-[#130E77] text-center mt-12 ">Who Can Benefit?</h2>

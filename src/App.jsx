@@ -21,7 +21,9 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Products defaultProduct="tenable" />} />
+          <Route path="/products/:productName" element={<Products />} />
+          <Route path="/products/:productName/:subProductName" element={<Products />} />
           <Route path="/pricing/:planName" element={<Pricing />} />
           <Route path="/services/:serviceName" element={<Services />} />
           <Route path="/activities/blog" element={<Blog />} />

@@ -1,7 +1,8 @@
 import React from 'react'
 import Description_box from './Description_box'
+import { Link } from 'react-router-dom'
 
-const Section2 = () => {
+const Section2 = ({ product }) => {
     return (
 
 
@@ -11,14 +12,11 @@ const Section2 = () => {
             <div className="flex flex-col lg:flex-row justify-center">
 
                 <div className="flex flex-col gap-10 ml-10 mt-5">
-
-                <Description_box  classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
-                    Real time monitoring and anomaly detection for OT environments with comprehensive asset inventory
-                </Description_box>
-
-                <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
-                    Protects critical Infrastructure through detailed risk assessments
-                </Description_box>
+                {product.products[0].descriptions.map((description, index) => (
+                    <Description_box key={index} classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                        {description}
+                    </Description_box>
+                ))}
                 </div>
 
                 <div className="hidden lg:flex flex-col gap-32 items-center mt-16 ml-2">
@@ -31,7 +29,9 @@ const Section2 = () => {
 
                 <div className="relative flex items-center mt-4 lg:mt-0">
                     <div className="w-20 lg:w-40 h-[1px] bg-blue"></div> {/* horizontal line */}
-                    <h1 className="ml-2 lg:ml-5text-xl font-semibold text-blue-900">Tenable.ot</h1>
+                    <Link to={`/products/${product.slug}/${product.products[0].slug}`} className="hover:text-blue-600">
+                        <h1 className="ml-2 lg:ml-5 text-xl font-semibold text-blue-900">{product.products[0].name}</h1>
+                    </Link>
                 </div>
 
             </div>
@@ -45,7 +45,9 @@ const Section2 = () => {
                 <div className="flex gap-10 ml-10 mt-5">
 
                     <div className="relative flex items-center">
-                        <h1 className="ml-2 lg:ml-5 mt-2 lg:mt-5 text-xl font-semibold text-blue-900">Tenable.io</h1>
+                        <Link to={`/products/${product.slug}/${product.products[1].slug}`} className="hover:text-blue-600">
+                            <h1 className="ml-2 lg:ml-5 mt-2 lg:mt-5 text-xl font-semibold text-blue-900">{product.products[1].name}</h1>
+                        </Link>
                         <div className="w-20 lg:w-44 ml-2 -mr-4 lg:-mr-9 mt-2 lg:mt-7 h-[1px] bg-blue"></div> {/* horizontal line */}
                     </div>
 
@@ -57,12 +59,11 @@ const Section2 = () => {
                     </div>
 
                     <div className='flex flex-col gap-10 mt-10'>
-                        <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue]">Real time monitoring and anomaly detection for OT 
-                        environments with comprehensive asset inventory</Description_box>
-
-                        <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue] ">Protects critical Infrastructure through detailed 
-                        risk assessments
-                        </Description_box>
+                        {product.products[1].descriptions.map((description, index) => (
+                            <Description_box key={index} classes="w-md h-auto shadow-[0px_0px_15px_5px_skyblue]">
+                                {description}
+                            </Description_box>
+                        ))}
                     </div>
 
                 </div>
@@ -74,14 +75,11 @@ const Section2 = () => {
             <div className="flex flex-col lg:flex-row justify-center mt-8 lg:mt-0">
 
                 <div className="flex flex-col gap-10 ml-10 mt-10">
-
-                    <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
-                        Real time monitoring and anomaly detection for OT environments with comprehensive asset inventory
-                    </Description_box>
-
-                    <Description_box classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
-                        Protects critical Infrastructure through detailed risk assessments
-                    </Description_box>
+                    {product.products[2].descriptions.map((description, index) => (
+                        <Description_box key={index} classes="w-md h-auto shadow-[0px_0px_15px_5px_rgba(47,128,232,0.5)]">
+                            {description}
+                        </Description_box>
+                    ))}
                 </div>
 
                 <div className="hidden lg:flex flex-col gap-30 items-center mt-22 ml-2">
@@ -93,7 +91,9 @@ const Section2 = () => {
 
                 <div className="relative flex items-center mt-4 lg:mt-0">
                     <div className="w-20 lg:w-40 h-[1px] bg-blue"></div> {/* horizontal line */}
-                    <h1 className="ml-2 lg:ml-5 text-xl font-semibold text-blue-900">Tenable.ot</h1>
+                    <Link to={`/products/${product.slug}/${product.products[2].slug}`} className="hover:text-blue-600">
+                        <h1 className="ml-2 lg:ml-5 text-xl font-semibold text-blue-900">{product.products[2].name}</h1>
+                    </Link>
                 </div>
 
             </div>

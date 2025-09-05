@@ -3,7 +3,7 @@ import React from 'react'
 const Form = () => {
   return (
     
-    <div className="bg-white shadow-[3px_3px_15px_7px_rgba(19,14,119,0.5)] rounded-b-lg p-6  w-1/2  h-auto">
+    <div className="bg-white shadow-[3px_3px_15px_7px_rgba(19,14,119,0.5)] rounded-b-lg p-6 w-full h-auto">
     
                 <form className="space-y-5 mt-5">
                     {/* Full Name */}
